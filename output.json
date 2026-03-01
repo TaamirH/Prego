@@ -1,0 +1,40 @@
+{
+  "transactions": [
+    {
+      "transaction_id": "stripe_ch_3PREG0Auth0001",
+      "prego_status": "paid",
+      "prego_payment_method": "card",
+      "prego_card_type": "credit",
+      "prego_transaction_response": "approved",
+      "prego_network": "visa"
+    },
+    {
+      "transaction_id": "stripe_ch_3PREG0Decline0001",
+      "prego_status": "processor_declined",
+      "prego_payment_method": "card",
+      "prego_card_type": "debit",
+      "prego_transaction_response": "insufficient_funds",
+      "prego_network": "mastercard"
+    }
+  ],
+  "disputes": [
+    {
+      "dispute_id": "stripe_dp_3PREG0Dispute0001",
+      "prego_dispute_status": "pending",
+      "prego_dispute_reason": "fraud"
+    }
+  ],
+  "refunds": [
+    {
+      "refund_id": "stripe_re_3PREG0Refund0001",
+      "prego_refund_status": "success",
+      "prego_refund_reason": "requested_by_customer"
+    }
+  ],
+  "payouts": [
+    {
+      "payout_id": "stripe_po_3PREG0Payout0001",
+      "prego_payout_status": "paid"
+    }
+  ]
+}
