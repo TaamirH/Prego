@@ -107,8 +107,8 @@ So the final `output.json` has only the latest state per ID.
 
 ## If I had another day on this
 
-- Add a small `tests/` suite with clear pass/fail cases for each mapper.
-- Read mapping rules from a config file so enum/rule changes do not require code edits.
-- Add a validation script that checks `output.json` before submission.
-- Improve logging so every fallback decision is visible and easy to debug.
+- Support reading a full folder tree (not just one flat directory) so larger real datasets are easier to process.
+- Add a `--strict` mode that fails fast when a field needs a fallback, so data quality issues are caught early.
+- Add a short summary report (counts by status and object type) after each run.
+- Containerize it with Docker so it runs the same way on any machine.
 
